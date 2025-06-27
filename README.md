@@ -22,11 +22,14 @@ Here you can see what has been completed and what is planned for the future.
 * [Prototype Pattern](./src/design_patterns/creational_patterns/prototype)
 * [Singleton Pattern](./src/design_patterns/creational_patterns/singleton)
 
-###  Structural Design Patterns (In Progress)
-* Adapter Pattern
-* Facade Pattern
-* Decorator Pattern
-* ... More to be added soon
+###  Structural Design Patterns
+* [Adapter Pattern](./src/design_patterns/structural_patterns/adapter)
+* [Facade Pattern](./src/design_patterns/structural_patterns/facade)
+* [Decorator Pattern](./src/design_patterns/structural_patterns/decorator)
+* [Bridge Pattern](./src/design_patterns/structural_patterns/bridge)
+* [Composite Pattern](./src/design_patterns/structural_patterns/composite)
+* [Flyweight Pattern](./src/design_patterns/structural_patterns/flyweight)
+* [Proxy Pattern](./src/design_patterns/structural_patterns/proxy)
 
 ### Behavioral Design Patterns (In Progress)
 * Strategy Pattern
