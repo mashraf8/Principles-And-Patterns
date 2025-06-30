@@ -1,20 +1,29 @@
-#  Prototype Design Pattern
+# Prototype Design Pattern
 
-##  Definition
-
-The **Prototype Pattern** is a **creational design pattern** that allows you to **create new objects by cloning existing ones**, rather than instantiating new objects from scratch.
-
-This pattern is especially useful when the cost of creating a new object is **expensive or complex**, and you need many similar objects.
-
-It supports two types of copying:
-
-- **Shallow Copy**: Copies the top-level object only; nested objects (references) are shared.
-- **Deep Copy**: Copies both the top-level object and all nested objects recursively, producing a fully independent copy.
+The **Prototype Pattern** is a **creational design pattern** used to **create new objects by copying existing ones**, known as prototypes. Instead of instantiating new objects from scratch, it **clones pre-existing objects**.
 
 ---
 
-##  Benefits of Prototype Pattern
+## Participants
 
--  **Improves performance**: Avoids costly object creation (e.g., from databases, heavy computation).
--  **Simplifies object creation**: Especially when constructors are complex or full of parameters.
--  **Flexible**: You can define different "prototype" objects and clone them as needed.
+| Role        | Responsibility                                                                 |
+|-------------|----------------------------------------------------------------------------------|
+| `Prototype` | Declares an interface with a `clone()` method to copy itself.                   |
+| `ConcretePrototype` | Implements the cloning logic (deep or shallow copy).                    |
+| `Client`    | Requests a new object by cloning a prototype instead of using `new`.            |
+
+---
+
+## Key Idea
+
+- Avoids costly creation of new objects by **cloning a pre-configured instance**.
+- Helps when creating an object is expensive (e.g., large setup, resource-intensive).
+- Supports **dynamic object creation** at runtime.
+
+---
+
+## When to Use
+
+- When object creation is **costly** or **resource-intensive**.
+- When a system should be **independent of how objects are created**.
+- When objects have **many shared configurations** but only a few differences.

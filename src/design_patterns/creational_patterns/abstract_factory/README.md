@@ -1,19 +1,40 @@
-# Abstract Factory
+# Abstract Factory Design Pattern
 
-The **Abstract Factory** is a creational design pattern that lets you create **families of related objects** without specifying their exact classes.
-
-It’s very similar to the **Factory Method Pattern** — both patterns hide object creation.
-
-But here's the key difference:
-- **Factory Method**: creates **one type of object** using a single method.
-- **Abstract Factory**: creates a **set of related objects** (a whole family) using multiple methods.
-
-Think of Abstract Factory as a “super” factory — it gives you a whole set of objects that are designed to work together.
+The **Abstract Factory Pattern** is a **creational design pattern** that provides an interface for creating **families of related or dependent objects** without specifying their concrete classes.
 
 ---
-## Why Use It?
 
--  To create **families of related objects** that should work together (e.g. 2D vs 3D shapes, or light vs dark themes).
--  To **hide the object creation logic** from the client code.
--  To follow the **Open/Closed Principle** – your code is open to extension (add new factories), but closed to modification.
--  To keep your code **modular and scalable**, making it easier to change product families without touching core logic.
+## Participants
+
+| Role                  | Responsibility                                                                 |
+|------------------------|----------------------------------------------------------------------------------|
+| `AbstractFactory`      | Declares a set of methods for creating abstract products.                       |
+| `ConcreteFactory`      | Implements the creation methods and returns concrete products.                  |
+| `AbstractProduct`      | Declares the interfaces for a type of product.                                  |
+| `ConcreteProduct`      | Implements the `AbstractProduct` interfaces.                                    |
+| `Client`               | Uses only interfaces declared by `AbstractFactory` and `AbstractProduct`.       |
+
+---
+
+## Key Idea
+
+- Group object creation into **families of products** (e.g., GUI widgets for Windows, macOS, Linux).
+- Each `ConcreteFactory` knows how to create all related products for one family.
+- The client **remains decoupled** from the actual product implementations.
+
+---
+
+## When to Use
+
+- When your system needs to be **independent of how objects are created**.
+- When objects in a system should be **used together as families**.
+- When you want to **enforce consistency** among products used together.
+- When you want to switch between product families **at runtime**.
+
+---
+
+## Comparison with Other Patterns
+
+| Pattern           | Purpose                                                                           |
+|--------------------|-----------------------------------------------------------------------------------|
+| **Factory Method** | Creates one product; allows subclasses to alter the type of product created.      |

@@ -1,27 +1,31 @@
 # Builder Design Pattern
 
-## Definition
-
-The **Builder Pattern** is a **creational design pattern** used to construct complex objects step-by-step. It allows you to create different representations of the same object using the same construction process.
-
-This pattern is especially useful when an object has many optional fields or when you want to avoid using long constructors.
+The **Builder Pattern** is a **creational design pattern** used to **construct complex objects step-by-step**. It separates the construction of an object from its representation so that the same construction process can create different representations.
 
 ---
 
-## Components
+## Participants
 
-| Component        | Description                                                  |
-|------------------|--------------------------------------------------------------|
-| `Product`        | The object that's being built (e.g., `House`)                |
-| `Builder`        | Interface that defines the building steps                    |
-| `ConcreteBuilder`| Provides implementation for the steps                        |
-| `Director`       | Orchestrates the building steps in a specific order          |
-| `Client`         | Requests the product to be built through the director        |
+| Role            | Responsibility                                                                 |
+|------------------|----------------------------------------------------------------------------------|
+| `Builder`        | Specifies an abstract interface for creating parts of a complex object.         |
+| `ConcreteBuilder`| Implements the Builder interface and assembles the parts into a final product.  |
+| `Director`       | Constructs an object using the `Builder` interface.                             |
+| `Product`        | The complex object being built.                                                 |
+| `Client`         | Initiates the building process using the `Director` and a specific `Builder`.   |
 
 ---
 
-##  When to Use
+## Key Idea
 
-- When an object has many fields or optional parts.
-- When you want to build different versions of the same object.
-- When you want to avoid having a constructor with too many parameters.
+- Encapsulate the **construction logic** of a complex object.
+- Allows creating **different representations** of the same type of object using the same construction process.
+- Makes the construction code **more readable and manageable**.
+
+---
+
+## When to Use
+
+- When the object construction involves **many optional steps** or parts.
+- When you want to **reuse the same construction logic** to build different representations.
+- When you want to construct complex objects in a **controlled and flexible way**.
