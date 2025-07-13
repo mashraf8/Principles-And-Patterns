@@ -8,21 +8,21 @@ An educational and evolving repository that demonstrates practical implementatio
 
 Here you can see what has been completed and what is planned for the future.
 
-###  SOLID Principles (Completed)
+###  SOLID Principles
 * [Single Responsibility Principle (SRP)](./src/solid/single_responsibility_principle)
 * [Open/Closed Principle (OCP)](./src/solid/open_closed_principle)
 * [Liskov Substitution Principle (LSP)](./src/solid/liskov_substitution_principle)
 * [Interface Segregation Principle (ISP)](./src/solid/interface_segregation)
 * [Dependency Inversion Principle (DIP)](./src/solid/dependency_inversion)
 
-###  Creational Design Patterns (Completed)
+###  Creational Design Patterns
 * [Factory Method Pattern](./src/design_patterns/creational_patterns/factory_method)
 * [Abstract Factory Pattern](./src/design_patterns/creational_patterns/abstract_factory)
 * [Builder Pattern](./src/design_patterns/creational_patterns/builder)
 * [Prototype Pattern](./src/design_patterns/creational_patterns/prototype)
 * [Singleton Pattern](./src/design_patterns/creational_patterns/singleton)
 
-###  Structural Design Patterns (Completed)
+###  Structural Design Patterns
 * [Adapter Pattern](./src/design_patterns/structural_patterns/adapter)
 * [Facade Pattern](./src/design_patterns/structural_patterns/facade)
 * [Decorator Pattern](./src/design_patterns/structural_patterns/decorator)
@@ -31,11 +31,18 @@ Here you can see what has been completed and what is planned for the future.
 * [Flyweight Pattern](./src/design_patterns/structural_patterns/flyweight)
 * [Proxy Pattern](./src/design_patterns/structural_patterns/proxy)
 
-### Behavioral Design Patterns (In Progress)
-* Strategy Pattern
-* Observer Pattern
-* Command Pattern
-* ... More to be added soon
+### Behavioral Design Patterns
+* [Chain of Responsibility Pattern](./src/design_patterns/behavioral_patterns/chain_of_responsibility)
+* [Strategy Pattern](./src/design_patterns/behavioral_patterns/strategy)
+* [Template Method Pattern](./src/design_patterns/behavioral_patterns/template_method)
+* [State Pattern](./src/design_patterns/behavioral_patterns/state)
+* [Command Pattern](./src/design_patterns/behavioral_patterns/command)
+* [Interpreter Pattern](./src/design_patterns/behavioral_patterns/interpreter)
+* [Iterator Pattern](./src/design_patterns/behavioral_patterns/iterator)
+* [Observer Pattern](./src/design_patterns/behavioral_patterns/observer)
+* [Mediator Pattern](./src/design_patterns/behavioral_patterns/mediator)
+* [Memento Pattern](./src/design_patterns/behavioral_patterns/memento)
+* [Visitor Pattern](./src/design_patterns/behavioral_patterns/visitor)
 
 ---
 
