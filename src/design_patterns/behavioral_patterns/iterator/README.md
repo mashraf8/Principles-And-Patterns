@@ -2,8 +2,6 @@
 
 The **Iterator Pattern** is a **behavioral design pattern** that provides a way to access the elements of a collection **sequentially without exposing its underlying representation**.
 
----
-
 ## Participants
 
 | Role               | Responsibility                                                                 |
@@ -14,14 +12,10 @@ The **Iterator Pattern** is a **behavioral design pattern** that provides a way 
 | `ConcreteAggregate`| Implements the Aggregate interface and returns a ConcreteIterator.             |
 | `Client`           | Uses the Iterator to traverse the collection without knowing its internals.    |
 
----
-
 ## Key Idea
 
 Rather than letting the client access the elements of a collection directly (which exposes its internal structure), the **Iterator** encapsulates the traversal logic.  
 This promotes **separation of concerns**: the collection manages the data, and the iterator manages how to traverse it.
-
----
 
 ## Common Methods in Iterator
 
@@ -31,8 +25,6 @@ This promotes **separation of concerns**: the collection manages the data, and t
 | `next()`    | Returns the next element and advances.       |
 | `reset()` *(optional)* | Resets the iterator to the beginning. |
 | `remove()` *(optional)*| Removes the current element.       |
-
----
 
 ## When to Use
 

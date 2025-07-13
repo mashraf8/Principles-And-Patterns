@@ -1,8 +1,6 @@
 # Strategy Design Pattern
 
-The **Strategy Pattern** is a **behavioral design pattern** that allows selecting an algorithm's behavior at **runtime**.  
-
----
+The **Strategy Pattern** is a **behavioral design pattern** that allows selecting an algorithm's behavior at **runtime**.
 
 ## Participants
 
@@ -12,14 +10,10 @@ The **Strategy Pattern** is a **behavioral design pattern** that allows selectin
 | `ConcreteStrategy` | Implements a specific algorithm or behavior.                                    |
 | `Context`          | Maintains a reference to a Strategy object and uses it to execute behavior.     |
 
----
-
 ## Key Idea
 
 Instead of implementing a behavior directly in a class, define separate strategy classes and make them interchangeable.  
 This allows the behavior to be selected at runtime without modifying the context.
-
----
 
 ## When to Use
 
@@ -27,8 +21,6 @@ This allows the behavior to be selected at runtime without modifying the context
 - You want to **choose an algorithm at runtime**.
 - You want to **avoid large `if-else` or `switch-case` statements**.
 - You want to **follow the Open/Closed Principle**.
-
----
 
 ## Open/Closed Principle
 

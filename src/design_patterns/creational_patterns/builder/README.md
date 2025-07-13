@@ -2,8 +2,6 @@
 
 The **Builder Pattern** is a **creational design pattern** used to **construct complex objects step-by-step**. It separates the construction of an object from its representation so that the same construction process can create different representations.
 
----
-
 ## Participants
 
 | Role            | Responsibility                                                                 |
@@ -14,15 +12,11 @@ The **Builder Pattern** is a **creational design pattern** used to **construct c
 | `Product`        | The complex object being built.                                                 |
 | `Client`         | Initiates the building process using the `Director` and a specific `Builder`.   |
 
----
-
 ## Key Idea
 
 - Encapsulate the **construction logic** of a complex object.
 - Allows creating **different representations** of the same type of object using the same construction process.
 - Makes the construction code **more readable and manageable**.
-
----
 
 ## When to Use
 

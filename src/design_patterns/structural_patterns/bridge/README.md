@@ -2,8 +2,6 @@
 
 The **Bridge Pattern** is a **structural design pattern** that decouples an abstraction from its implementation so that the two can vary independently.
 
----
-
 ## Participants
 
 | Role                  | Responsibility                          |
@@ -14,20 +12,17 @@ The **Bridge Pattern** is a **structural design pattern** that decouples an abst
 | `ConcreteImplementor`  | Implements the `Implementor` interface. |
 | `Client`               | Works only with the `Abstraction`, unaware of the underlying implementation. |
 
-
 ## Key Idea
 
 - The `Abstraction` delegates the actual work to an object implementing the `Implementor` interface.
 - Changes to either side (abstraction or implementation) won’t affect the other.
-
----
 
 ## When to Use
 
 - When abstraction and implementation should be able to vary independently.
 - When both the abstraction and the implementation have their own class hierarchies.
 - When you want to avoid a **combinatorial explosion** of classes due to multiple dimensions of variation.
----
+
 ## Comparison with Other Patterns
 | Pattern     | Purpose                                                                 |
 |-------------|-------------------------------------------------------------------------|

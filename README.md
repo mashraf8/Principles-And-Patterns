@@ -2,8 +2,6 @@
 
 An educational and evolving repository that demonstrates practical implementations of the five SOLID principles and core categories of the Gang of Four (GoF) design patterns — including Creational, Structural, and Behavioral patterns — using Java. The project focuses on writing clean, modular, and extensible code following best practices in object-oriented design.
 
----
-
 ##  Table of Contents & Roadmap
 
 Here you can see what has been completed and what is planned for the future.
@@ -44,8 +42,6 @@ Here you can see what has been completed and what is planned for the future.
 * [Memento Pattern](./src/design_patterns/behavioral_patterns/memento)
 * [Visitor Pattern](./src/design_patterns/behavioral_patterns/visitor)
 
----
-
 ## Usage
 
 1.  **Compile all Java files:**
@@ -72,10 +68,8 @@ Here you can see what has been completed and what is planned for the future.
         java -cp out solid.single_responsibility_principle.good_example.Run
         ```
 
----
 ## Contact
 If you have any questions, suggestions, or feedback, feel free to reach out to us at **Email:** [mohashraf.eng@gmail.com](mailto:mohashraf.eng@gmail.com)
 
----
 ## License
 This project is licensed under the [MIT License](./LICENSE) © 2025 Mohammed Ashraf.

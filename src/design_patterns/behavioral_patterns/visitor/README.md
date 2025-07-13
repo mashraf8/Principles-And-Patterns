@@ -3,8 +3,6 @@
 The **Visitor Pattern** is a **behavioral design pattern** that lets you **separate algorithms** from the objects on which they operate.  
 It allows adding new operations to existing object structures **without modifying** the classes of those elements.
 
----
-
 ## Participants
 
 | Role              | Responsibility                                                                 |
@@ -15,15 +13,11 @@ It allows adding new operations to existing object structures **without modifyin
 | `ConcreteElement` | Implements the `accept()` method and calls the visitor's `visit()` method.      |
 | `Client`          | Builds the object structure and applies visitors to the elements.               |
 
----
-
 ## Key Idea
 
 Each **element** class implements an `accept(visitor)` method that delegates the call to the **visitor**, passing `this` as an argument.
 
 This double-dispatch mechanism enables the **visitor** to perform operations **specific to the element’s type** without altering the element classes.
-
----
 
 ## When to Use
 

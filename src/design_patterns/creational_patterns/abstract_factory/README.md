@@ -2,8 +2,6 @@
 
 The **Abstract Factory Pattern** is a **creational design pattern** that provides an interface for creating **families of related or dependent objects** without specifying their concrete classes.
 
----
-
 ## Participants
 
 | Role                  | Responsibility                                                                 |
@@ -14,15 +12,11 @@ The **Abstract Factory Pattern** is a **creational design pattern** that provide
 | `ConcreteProduct`      | Implements the `AbstractProduct` interfaces.                                    |
 | `Client`               | Uses only interfaces declared by `AbstractFactory` and `AbstractProduct`.       |
 
----
-
 ## Key Idea
 
 - Group object creation into **families of products** (e.g., GUI widgets for Windows, macOS, Linux).
 - Each `ConcreteFactory` knows how to create all related products for one family.
 - The client **remains decoupled** from the actual product implementations.
-
----
 
 ## When to Use
 
@@ -30,8 +24,6 @@ The **Abstract Factory Pattern** is a **creational design pattern** that provide
 - When objects in a system should be **used together as families**.
 - When you want to **enforce consistency** among products used together.
 - When you want to switch between product families **at runtime**.
-
----
 
 ## Comparison with Other Patterns
 

@@ -4,8 +4,6 @@ The **Adapter Pattern** is a **structural design pattern** that allows objects w
 
 It acts as a **bridge** between an existing class (with one interface) and a new class (with a different expected interface), **converting the interface of one class into another that the client expects.**
 
----
-
 ## Participants
 
 | Role         | Description                                                  |
@@ -14,8 +12,6 @@ It acts as a **bridge** between an existing class (with one interface) and a new
 | `Target`     | The interface expected by the client                         |
 | `Adaptee`    | The existing class with an incompatible interface            |
 | `Adapter`    | Converts the interface of the adaptee into the target one    |
-
----
 
 ## When to Use
 

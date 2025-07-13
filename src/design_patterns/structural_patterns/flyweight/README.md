@@ -2,8 +2,6 @@
 
 The **Flyweight Pattern** is a **structural design pattern** used to **minimize memory usage** by sharing as much data as possible with similar objects.
 
----
-
 ## Participants
 
 | Role               | Responsibility                                                                 |
@@ -12,13 +10,9 @@ The **Flyweight Pattern** is a **structural design pattern** used to **minimize 
 | `FlyweightFactory` | Creates and manages flyweight instances. Ensures that objects are reused.       |
 | `Client`           | Uses the shared objects and passes **extrinsic (external)** state when needed.  |
 
----
-
 ## Key Idea
 
 Rather than creating a large number of similar objects, reuse a few shared instances (intrinsic state), and pass the varying (extrinsic) data only when needed.
-
----
 
 ## When to Use
 
